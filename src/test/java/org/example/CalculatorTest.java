@@ -45,6 +45,13 @@ class CalculatorTest {
             assertEquals(0.0, calculator.squareRoot(0.0));
         }
 
+    @Test
+    void square() {
+        assertEquals(16.0, calculator.square(4.0));
+        assertNotEquals(17.0, calculator.square(4.0));
+        assertEquals(0.0, calculator.square(0.0));
+        assertEquals(25.0, calculator.square(5.0));
+    }
 
 
 }
