@@ -34,4 +34,11 @@ public class Calculator {
     }
 
 
+    public double[] calculateSinCos(double a) {
+        double sine = Math.sin(a);
+        double cosine = Math.cos(a);
+        return new double[] { sine, cosine };
+    }
+
+
 }
