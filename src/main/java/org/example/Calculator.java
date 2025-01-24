@@ -21,4 +21,11 @@ public class Calculator {
         }
         return a/b;
     }
+
+    public double squareRoot(double a) {
+        if (a < 0) {
+            throw new IllegalArgumentException("Square root of negative numbers is not allowed");
+        }
+        return Math.sqrt(a);
+    }
 }
