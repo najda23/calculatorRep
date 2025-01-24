@@ -40,5 +40,14 @@ public class Calculator {
         return new double[] { sine, cosine };
     }
 
+    public String toBinary(int number) {
+        if (number < 0) {
+            throw new IllegalArgumentException("Only non-negative integers are allowed");
+        }
+        return Integer.toBinaryString(number);
+    }
+
+
+
 
 }

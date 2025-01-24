@@ -86,4 +86,12 @@ class CalculatorTest {
         assertEquals(1.0, result[1], 0.0001); // Cos(2π)
     }
 
+    @Test
+    void toBinary() {
+        assertEquals("1010", calculator.toBinary(10));
+        assertEquals("111", calculator.toBinary(7));
+        assertEquals("0", calculator.toBinary(0));
+        assertEquals("1001", calculator.toBinary(9));
+        assertThrows(IllegalArgumentException.class, () -> calculator.toBinary(-5));
+    }
 }
