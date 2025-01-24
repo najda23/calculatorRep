@@ -28,4 +28,10 @@ public class Calculator {
         }
         return Math.sqrt(a);
     }
+
+    public double square(double a) {
+        return Math.pow(a, 2);
+    }
+
+
 }
